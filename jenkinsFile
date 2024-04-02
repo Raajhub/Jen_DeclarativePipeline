@@ -4,22 +4,29 @@ stages
 {
         stage ('Build')
         {
-            echo ('Building the project . . .')
+            Steps{
+		echo ('Building the project . . .')
         }
-        
+        }
         stage ('Test')
         {
+Steps{
             echo ('Testing the project . . .')
+}
         }
         
         stage ('Deploy')
         {
+Steps{
             echo ('Deploying the project . . .')
+}
         }
         
         stage ('Release')
         {
-            echo ('Releasing the project . . .')
+Step{            
+echo ('Releasing the project . . .')
+}
         }
 }
 }
