@@ -24,7 +24,7 @@ Steps{
         
         stage ('Release')
         {
-Step{            
+Steps{            
 echo ('Releasing the project . . .')
 }
         }
